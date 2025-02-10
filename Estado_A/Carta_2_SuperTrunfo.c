@@ -36,12 +36,15 @@ int main () {
     printf("Entre com a população: "); //Solicitando ao usuário que entre com a população da cidade
     scanf("%d", &populacao); //Lendo a população da cidade
     printf("População: %d\n", populacao); //Exibindo a população da cidade
+
     printf("Entre com o Número de Pontos Turisticos: "); //Solicitando ao usuário que entre com a quantidade de pontos turísticos
     scanf(" %d", &pontos_turisticos); //Lendo a quantidade de pontos turísticos
     printf("Pontos Turisticos:%d\n", pontos_turisticos); //Exibindo a quantidade de pontos turísticos
+
     printf("Entre com o PIB: "); //Solicitando ao usuário que entre com o PIB da cidade
     scanf("%f", &pib); //Lendo o PIB da cidade
     printf("PIB: %f\n", pib); //Exibindo o PIB da cidade
+    
     printf("Entre com a área em KM²: "); //Solicitando ao usuáro que entre com a área em km²
     scanf(" %f", &areakm2); //Lendo a área em km²
     printf("Área em KM²: %f\n", areakm2); //Exibindo a área em km²
