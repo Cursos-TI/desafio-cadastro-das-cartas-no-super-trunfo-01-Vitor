@@ -18,14 +18,13 @@ int main () {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    int populacao; //População total da cidade
-    int pontos_turisticos; //Número de Pontos Turisticos da cidade
-    float pib; //PIB da cidade
-    float areakm2; //área em KM² da cidade
-    char nome_da_cidade[50]; //Nome da cidade em até 50 caracteres
+    int populacao, pontos_turisticos;
+    float pib, areakm2, densidade_populacional, pib_per_capita; // densidade populacional e pib per capita já criados para o segundo nível do desafio
+    char nome_da_cidade[50]; 
     char estado = 'A'; //Estado definido como "A"
-    char codigo_da_carta [4] = "A01"; //Código da carta definido em 4 caracteres: "AO1"
+    char codigo_da_carta [4] = "A02"; //Código da carta definido em 4 caracteres: "AO2"
     
+    printf("Carta 1: \n");
     printf("Estado: %c\n", estado); //Imprimindo o Estado
     printf("Código da carta: %s\n", codigo_da_carta); //Imprimindo o Código da Carta
     
@@ -37,18 +36,43 @@ int main () {
     scanf("%d", &populacao); //Lendo a população da cidade
     printf("População: %d\n", populacao); //Exibindo a população da cidade
 
-    printf("Entre com o Número de Pontos Turisticos: "); //Solicitando ao usuário que entre com a quantidade de pontos turísticos
-    scanf(" %d", &pontos_turisticos); //Lendo a quantidade de pontos turísticos
-    printf("Pontos Turisticos:%d\n", pontos_turisticos); //Exibindo a quantidade de pontos turísticos
+    printf("Entre com a área em KM²: "); //Solicitando ao usuáro que entre com a área em km²
+    scanf(" %f", &areakm2); //Lendo a área em km²
+    printf("Área: %f km²\n", areakm2); //Exibindo a área em km²
 
     printf("Entre com o PIB: "); //Solicitando ao usuário que entre com o PIB da cidade
     scanf("%f", &pib); //Lendo o PIB da cidade
-    printf("PIB: %f\n", pib); //Exibindo o PIB da cidade
-    
-    printf("Entre com a área em KM²: "); //Solicitando ao usuáro que entre com a área em km²
-    scanf(" %f", &areakm2); //Lendo a área em km²
-    printf("Área em KM²: %f\n", areakm2); //Exibindo a área em km²
+    printf("PIB: %f bilhões de reais\n", pib); //Exibindo o PIB da cidade
 
+    printf("Entre com o Número de Pontos Turisticos: "); //Solicitando ao usuário que entre com a quantidade de pontos turísticos
+    scanf(" %d", &pontos_turisticos); //Lendo a quantidade de pontos turísticos
+    printf("Pontos Turisticos: %d\n", pontos_turisticos); //Exibindo a quantidade de pontos turísticos
+
+    
+    /* Código para o segundo nível, criando a densidade populacional e pib per capita e após, realizando os cálculos solicitados pelo desafio
+
+    printf("Entre com a Densidade Populacional: ");
+    scanf("%f", &densidade_populacional);
+    printf("Densidade Populacional: %.2f km²\n", densidade_populacional);
+
+    printf("Entre com o PIB per Capita \n");
+    scanf("%f", &pib_per_capita);
+    printf("PIB per Capita: %.2f\n", pib_per_capita);
+    
+
+    Calculando a densidade populacional
+
+    densidade_populacional = ((float) populacao / (areakm2));
+    printf("Densidade Populacional: %.2f\n", densidade_populacional);
+
+    // calculando o pib per capita
+
+    pib_per_capita = pib_per_capita / populacao;
+    printf("PIB per Capita: %.2f\n", pib_per_capita);
+
+    */
     return 0;
+
+
     
 }
