@@ -49,7 +49,7 @@ int main () {
     printf("Pontos Turisticos: %d\n", pontos_turisticos); //Exibindo a quantidade de pontos turísticos
 
     
-    /* Código para o segundo nível, criando a densidade populacional e pib per capita e após, realizando os cálculos solicitados pelo desafio
+    /* Código para o segundo nível, criando a densidade populacional e pib per capita e após, realizando os cálculos solicitados
 
     printf("Entre com a Densidade Populacional: ");
     scanf("%f", &densidade_populacional);
@@ -69,6 +69,8 @@ int main () {
 
     pib_per_capita = pib_per_capita / populacao;
     printf("PIB per Capita: %.2f\n", pib_per_capita);
+
+    FIM
 
     */
     return 0;
