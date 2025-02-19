@@ -24,7 +24,6 @@ int main () {
     char estado = 'A'; //Estado definido como "A"
     char codigo_da_carta [4] = "A01"; //Código da carta definido em 4 caracteres: "AO1"
     
-    printf("Carta 1: \n");
     printf("Estado: %c\n", estado); //Imprimindo o Estado
     printf("Código da carta: %s\n", codigo_da_carta); //Imprimindo o Código da Carta
     
@@ -49,7 +48,7 @@ int main () {
     printf("Pontos Turisticos: %d\n", pontos_turisticos); //Exibindo a quantidade de pontos turísticos
 
     
-    /* Código para o segundo nível, criando a densidade populacional e pib per capita e após, realizando os cálculos solicitados
+    /* Código para o segundo nível, criando a densidade populacional e pib per capita e após, realizando os cálculos solicitados pelo desafio
 
     printf("Entre com a Densidade Populacional: ");
     scanf("%f", &densidade_populacional);
@@ -69,8 +68,6 @@ int main () {
 
     pib_per_capita = pib_per_capita / populacao;
     printf("PIB per Capita: %.2f\n", pib_per_capita);
-
-    FIM
 
     */
     return 0;
