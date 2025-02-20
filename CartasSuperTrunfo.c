@@ -74,6 +74,7 @@ int main(){
     scanf("%f", &area2);
     printf("Área em km²: %.2f\n", area2);
 
+    //Inserindo a densidade populacional e pib per capita
 
     return 0;
 }
